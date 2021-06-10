@@ -1,9 +1,11 @@
 import React from 'react'
+import './CSS/Home.css'
 
-const Home = ({props}) => {
+
+const Home = () => {
     return (
         <div>
-            <h1>I am from {props} </h1>
+            <div className="mainBackground parallax"> </div>
         </div>
     )
 }
