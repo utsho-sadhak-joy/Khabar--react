@@ -7,7 +7,7 @@ import Contact from './Contact';
 import {BrowserRouter as Router, Link,} from 'react-router-dom';
 
 
-const Menubar = () => {
+const Navbar = () => {
     const[active, setActive] =useState("start");
     return (
         <div>
@@ -42,15 +42,15 @@ const Menubar = () => {
             </Router>
             
             <div>
-                {active ==="start" && <Home    />}
-                {active ==="about" && <About   />}
-                {active ==="info" && <Info    />}
-                {active ==="service" && <Service />}
-                {active ==="contact" && <Contact />}
+                {active ==="start" && <Home    props="Home page"/>}
+                {active ==="about" && <About   props="About page"/>}
+                {active ==="info" && <Info    props="Service page"/>}
+                {active ==="service" && <Service props="Info page"/>}
+                {active ==="contact" && <Contact props="Contact page"/>}
             </div>
             
         </div>
     )
 }
 
-export default Menubar
+export default Navbar
